@@ -1,6 +1,6 @@
 ---
 - name: Install melodi
-  hosts: Web
+  hosts: dev
 
   tasks:
   - name: install prerequisites
