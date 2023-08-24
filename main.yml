@@ -4,7 +4,7 @@
 
   tasks:
   - name: install prerequisites
-    package:
+    yum:
       name:
       - wget
       - vim
@@ -12,7 +12,7 @@
       state: present
 
   - name: install apache
-    package:
+    yum:
       name: httpd
       state: present
 
