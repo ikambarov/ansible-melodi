@@ -27,3 +27,4 @@ jobs:
         uses: maurete/ansible-action@main
         with:
           playbook: main.yml
+          arguments: -i aws_ec2.yml -u ec2-user -b
