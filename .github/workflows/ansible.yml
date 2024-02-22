@@ -24,4 +24,6 @@ jobs:
           chmod 400 ansible_key
 
       - name: Test Inventory
-        run: ansible -i aws_ec2.yml -m ping all
+        uses: maurete/ansible-action@main
+        with:
+          playbook: main.yml
